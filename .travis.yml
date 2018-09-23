@@ -6,10 +6,10 @@ matrix:
       dist: trusty
       mono: none
       dotnet: 2.0.0
-      before_script: cd csharp/ttt_3
+      before_script: cd csharp/ttt_3/TicTacToe
       script:
           - dotnet restore
-          - dotnet test /TicTacToe/TicTacToeTests/TicTacToeTests.csproj
+          - dotnet test TicTacToeTests/TicTacToeTests.csproj
           - dotnet publish -c release
 
     - language: java
