@@ -8,6 +8,8 @@ matrix:
 
     - language: java
       jdk: oraclejdk8
+      env:
+          - TEAM=ttt_2
       before_script: cd java/ttt_2
 
     - language: csharp
@@ -16,6 +18,8 @@ matrix:
       dist: trusty
       mono: none
       dotnet: 2.0.0
+      env:
+          - TEAM=ttt_5
       before_script: cd csharp/ttt_5
       script:
           - dotnet restore
@@ -28,6 +32,8 @@ matrix:
       dist: trusty
       mono: none
       dotnet: 2.0.0
+      env:
+          - TEAM=ttt_6
       before_script: cd csharp/ttt_6
       script:
           - dotnet restore
