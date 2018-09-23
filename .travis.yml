@@ -1,0 +1,16 @@
+matrix:
+  include:
+    - language: csharp
+      solution: csharp/ttt_3/TicTacToe/TicTacToe.sln
+      sudo: required
+      dist: trusty
+      mono: none
+      dotnet: 2.0.0
+      script:
+          - dotnet restore
+          - dotnet test csharp/ttt_3/TicTacToe/TicTacToeTests/TicTacToeTests.csproj
+          - dotnet publish -c release
+
+    - language: java
+      jdk: oraclejdk8
+      before_script: cd java/ttt_1
