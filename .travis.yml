@@ -36,7 +36,6 @@ matrix:
           - dotnet test TicTacToeTests/TicTacToeTests.csproj
           - dotnet publish -c release
 
-    - language: java
     - language: csharp
       solution: csharp/ttt_6/TicTacToe.sln
       sudo: required
@@ -49,6 +48,7 @@ matrix:
           - dotnet test TicTacToeTests/TicTacToeTests.csproj
           - dotnet publish -c release
 
+    - language: java
       jdk: oraclejdk8
       before_script: cd java/ttt_1
 
