@@ -1,30 +1,6 @@
 matrix:
   include:
     - language: csharp
-      solution: csharp/ttt_3/TicTacToe/TicTacToe.sln
-      sudo: required
-      dist: trusty
-      mono: none
-      dotnet: 2.0.0
-      before_script: cd csharp/ttt_3/TicTacToe
-      script:
-          - dotnet restore
-          - dotnet test TicTacToeTests/TicTacToeTests.csproj
-          - dotnet publish -c release
-
-    - language: csharp
-      solution: csharp/ttt_4/TicTacToe/TicTacToe.sln
-      sudo: required
-      dist: trusty
-      mono: none
-      dotnet: 2.0.0
-      before_script: cd csharp/ttt_4/TicTacToe
-      script:
-          - dotnet restore
-          - dotnet test TicTacToeTests/TicTacToeTests.csproj
-          - dotnet publish -c release
-
-    - language: csharp
       solution: csharp/ttt_5/TicTacToe.sln
       sudo: required
       dist: trusty
