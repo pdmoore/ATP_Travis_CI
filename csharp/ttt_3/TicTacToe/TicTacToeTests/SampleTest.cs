@@ -8,7 +8,8 @@ namespace TravisTests {
         
         [Test]
         public void ExampleTest() {
-            Assert.Fail("force failure to see CI fail");
+            Assert.IsTrue(true);
+//            Assert.Fail("force failure to see CI fail");
         }
     }
 }
